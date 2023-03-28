@@ -1,0 +1,93 @@
+/*Police d'écriture*/
+@font-face {
+    font-family: quicksand ;
+    src: url(/assets/font/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+body{
+	background: linear-gradient(-45deg, #d500d2, #075cc5, #003e56, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+	font
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+img{
+	max-width: 3rem;
+}
+/*Application flexbox pour disposer mes 2 items*/
+.container{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+	
+}
+/*Design général des items*/
+.item1, .item2{
+	background-color: #122831;
+	color: #FFFFFF;
+	font-family: quicksand;
+	width: 30rem;
+	height: 20rem;
+	border: #FFFFFF solid 2px;
+}
+/*Item 1*/
+.item1{
+	margin-top: 5rem;
+	margin-right: -1rem;
+}
+.item1 h1, .item1 p{
+	margin-left: 5rem;
+	margin-right: 5rem;
+	text-align: center;
+}
+.item1 h1{
+	margin-top: 5.5rem;
+}
+/*Item 2*/
+.item2{
+	align-self: flex-end;
+	margin-bottom: 5rem;
+	margin-left: -1rem;
+}
+.item2 img{
+	align-items: center;
+}
+.contact img{
+	filter: invert(100%);
+	width: 3rem;
+	margin: 0 1rem 0 1rem;
+}
+
+/*Commun item1 et item2*/
+.skills, .contact{
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+/*photo centrale*/
+.Pic{
+	display: flex;
+	justify-content: center;
+}
+.Pic img{
+	max-width: 18rem;
+	position: absolute;
+	transform: translateY(-35rem);
+	border: #FFFFFF solid 2px;
+	filter: grayscale(100%) contrast(100%);
+}
