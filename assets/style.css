@@ -21,7 +21,6 @@ body{
 		background-position: 0% 50%;
 	}
 }
-
 img{
 	max-width: 3rem;
 }
@@ -57,8 +56,8 @@ img{
 	grid-row: 1;
 }
 .item1 h1, .item1 p{
-	margin-left: 5rem;
-	margin-right: 5rem;
+	margin-left: 7rem;
+	margin-right: 7rem;
 	text-align: center;
 }
 .item1 h1{
@@ -88,8 +87,6 @@ img{
 	margin-top: 2.5rem;
 	text-align: center;
 }
-
-
 .cube1{
 	width: 8rem;
 	height: 8rem;
@@ -102,6 +99,7 @@ img{
 	/*justify-self: end;*//*alignement item en haut à gauche de la cellule*/
 	justify-self: center;/*align center main axis*/
 	align-self: center;/*align center cross axis*/
+
 }
 .cube2{
 	width: 8rem;
@@ -116,19 +114,22 @@ img{
 	justify-self: center;
 	align-self: center;
 }
-
-
-
-
 /*photo centrale*/
+.PicContain{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	max-width: 100%;
+	z-index: 5;
+}
 .Pic{
 	/*display: flex;
 	justify-content: center;*/
+	align-self: center;
 }
 .Pic img{
-	max-width: 18rem;
-	position: absolute;
-	transform: translateY(-35rem);
+	max-width: 15rem ;
+	transform: translate(39.5rem, 13rem);
 	border: #FFFFFF solid 2px;
 	filter: grayscale(100%) contrast(100%);
 }
